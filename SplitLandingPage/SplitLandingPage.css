@@ -66,6 +66,13 @@ h1 {
   padding: 1.5rem;
 }
 
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+  transition: all var(--speed) ease-in-out;
+}
+
 .split {
   position: absolute;
   width: 50%;
@@ -101,13 +108,6 @@ h1 {
   background: url("https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.split-right,
-.split-left,
-.split.right::before,
-.split.left::before {
-  transition: all var(--speed) ease-in-out;
 }
 
 .hover-left .left {
