@@ -8,7 +8,7 @@ const date = document.getElementById("date");
 const animated_bgs = document.querySelectorAll(".animated-bg");
 const animated_bg_texts = document.querySelectorAll(".animated-bg-text");
 
-setTimeout(getData, 2000);
+setTimeout(getData, 2500);
 
 function getData() {
   header.innerHTML =
@@ -21,7 +21,9 @@ function getData() {
     '<img src="https://randomuser.me/api/portraits/men/45.jpg" alt="" />';
   name.innerHTML = "Fomgran";
   date.innerHTML = "Apr 07, 2022";
-}
 
-animated_bgs.forEach((bg) => bg.classList.remove("animated-bg"));
-animated_bg_texts.forEach((text) => text.classList.remove("animated-bg-text"));
+  animated_bgs.forEach((bg) => bg.classList.remove("animated-bg"));
+  animated_bg_texts.forEach((text) =>
+    text.classList.remove("animated-bg-text")
+  );
+}
